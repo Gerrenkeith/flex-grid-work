@@ -6,7 +6,7 @@ html {
 
 .container {
     display: grid;
-    grid-template: 1fr 6fr / 1fr 3.8fr;
+    grid-template: 1fr 6fr / 1fr 4fr;
     grid-template-areas: 
         "sidebar header"
         "sidebar main"
@@ -16,9 +16,10 @@ html {
 .sidebar {
     grid-area: sidebar;
     background-color: rgb(25,146,212);
+    width: 21.1vw;
     color: white;
     display: grid;
-    grid-template-rows: 1fr 3fr 2fr ;
+    grid-template-rows: 1fr 4fr 3fr ;
     grid-template-areas: 
         "dashboard"
         "directory"
@@ -29,11 +30,12 @@ html {
 .header {
     grid-area: header;
     display: grid;
+    height: 26vh;
     grid-template-columns: 2fr 1fr;
     grid-template-areas: 
         "searchbar notify"
         "about post";
-    box-shadow: 0 5px 5px -4px;
+    box-shadow: 0px 10px 10px 5px rgba(128, 128, 128, 0.542);
     margin-bottom: 3px;
 }
 
@@ -44,28 +46,34 @@ html {
 
 ul {
     list-style: none;
-    padding: 10px 25px 75px;
-    
+    padding-left: 0%;
 }
 
 li {
     display: flex;
-    align-items: center;
-    gap: 10px;
-    font-weight: bold;
-    font-size: medium;
+    gap: 5px;
 }
 
 li svg {
     padding-top: 5px;
 }
+
 .dashboard {
     grid-area: dashboard;
     margin: 0;
 }
 
+.dashboard li {
+    font-size: 5vh;
+
+}
+
+.dashboard li svg {
+    font-size: .8vw;
+}
+
 .dashboard li img {
-    height: 40px;
+    height: 50px;
     
 }
 .directory {
@@ -73,7 +81,7 @@ li svg {
 }
 
  .directory li, .additional li  {
-    font-size: 3.2vh;
+    font-size: 3.5vh;
     margin-bottom: 3vh;
 
  }
@@ -88,16 +96,17 @@ li svg {
     display: flex;
     justify-content:flex-start;
     align-items: center;
-    gap: 20px;
+    gap: 22px;
     margin-left: 3vw;
+    margin-bottom: .9vh;
 }
  .searchbar img {
-    height: 30px;
+    height: 32px;
  }
 
 input {
-    width: 41vw;
-    height: 3.7vh;
+    width: 41.9vw;
+    height: 4.3vh;
     border-radius: 25px;
     background-color: rgb(226,232,240);
     border: none;
@@ -109,12 +118,15 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1.7em;
+    gap: 2.5em;
+    margin-left: 2.1em;
+    margin-bottom: 0.9em;
+    margin-right: 1rem;
 }
 
 .notify img {
-    height: 4em;
-    width: 4em;
+    height: 4.1em;
+    width: 4.1em;
     border-radius: 50px;
 }
 
@@ -126,23 +138,24 @@ input {
     grid-area: about;
     display: flex;
     align-items: center;
-    gap: 20px;
-    padding-left: 3.8vw;
-    padding-bottom: 1.5em;
+    gap: 30px;
+    padding-left: 3.2vw;
+    padding-bottom: 1.1em;
 }
  
 .about img {
-    height: 5.6em;
-    width: 5.5em;
+    height: 6em;
+    width: 6em;
     border-radius: 100px;
 }
 .about p{
     margin-bottom: 0;
-    font-weight: bold;
+    font-weight: bolder;
+    font-size: large;
 }
 
 .about div h3 {
-    font-size: xx-large;
+    font-size: 2.2em;
     margin-top: 0;
     margin-bottom: 8px;
 }
@@ -154,18 +167,23 @@ input {
     align-items: center;
     gap: 2vw;
     padding-right: 3em;
+    margin-bottom: 0.8em;
+    margin-right: 1.05rem;
 }
 
 a {
     background-color: rgb(25,146,212);
-    width: 7em;
-    height: 2em;
+    width: 6.4em;
+    height: 2.1em;
     text-align: center;
     border-radius: 50px;
-    padding-top: .5em;
     color: white;
     font-weight: bold;
+    font-size: 1.3em;
     text-decoration: none;
+    margin: 0 auto;
+    padding-top: .5em;
+
 }
 
 .main {
@@ -184,10 +202,6 @@ a {
 
 .project {
     grid-area: project;
-}
-
-.project h3 {
-    
 }
 
 .project div {
