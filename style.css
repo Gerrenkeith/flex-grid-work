@@ -260,10 +260,29 @@ a {
     justify-content: left;
 }
 
+.notes .one, .notes .two {
+    margin-left: 2.5em;
+    border-bottom: .5px solid gray;
+    padding-bottom: 2em;
+    padding-top: 1em;
+}
+
+.notes .three {
+    margin-left: 2.5em;
+    padding-bottom: 2em;
+    padding-top: 1em;
+} 
+
+
+.notes h3 {
+    font-size: large;
+    
+}
+
 
 .tags {
     background-color: white;
-    height: 24em;
+    height: 25em;
     margin-top: 20px;
     display: flex;
     flex-direction: column;
@@ -276,8 +295,17 @@ a {
     justify-content: left;
 }
 
+.hash {
+    width: fit-content;
+    display: flex;
+    gap: 10px;
+    margin-left: 2.5em;
+    padding-bottom: 2em;
+    padding-top: 1em;
+}
+
 .trending {
-    padding-top: 25px;
+    padding-top: 20px;
     grid-area: trending;
 }
 
@@ -288,3 +316,20 @@ a {
     gap: 30px;
     padding-right: 2em;
 }
+
+.hash img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.hash h5 {
+    font-size: large;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.item p, .hash p {
+    color: rgb(140,140,140);
+}
+
